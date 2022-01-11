@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Slider</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        
+        .heading{
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .main_div{
+            height: 300px;
+            width: 600px;
+            background-color: gray;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-image: url(images/a1.jpg);
+            background-size: 100%, 100%;
+            box-shadow: 2px 2px 20px black;
+            animation: slider 10s infinite linear;
+        }
+        
+        @keyframes slider{
+            0%{background-image: url(images/a1.jpg)}
+            25%{background-image: url(images/a2.jpg)}
+            45%{background-image: url(images/a3.jpg)}
+            65%{background-image: url(images/a4.jpg)}
+            85%{background-image: url(images/a5.jpg)}
+            95%{background-image: url(images/a6.jpg)}
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">CSS slider</h1>
+    <div class="main_div">
+        
+    </div>
+</body>
+</html>
